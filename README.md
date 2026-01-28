@@ -74,7 +74,7 @@ To open the Matterbridge frontend click on **Open web UI**.
 
 You may be asked to install the Home Assistant Matter Server: confirm the default installation.
 
-This add-on has a ![configuration page](https://github.com/Luligu/matterbridge-home-assistant-addon-test/blob/main/screenshots/configuration.png) with the binding address for the matterbridge frontend and the possibility to install the latest dev instead of the latest stable.
+This add-on has a ![configuration page](https://github.com/user-attachments/assets/5038dba2-438d-4984-bfb7-f76329fe3324) with the binding address for the matterbridge frontend and the possibility to install the latest dev instead of the latest stable.
 
 ## Supervisor behavior
 
