@@ -34,7 +34,7 @@ The Add-on can run on arm64, amd64 archs (armv7 is [deprecated](https://www.home
 
 # Changelog
 
-[Changelog](https://github.com/Luligu/matterbridge-home-assistant-addon-test/CHANGELOG.md)
+[Changelog](https://github.com/Luligu/matterbridge-home-assistant-addon-test/blob/main/CHANGELOG.md)
 
 # YouTube
 
