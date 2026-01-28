@@ -14,7 +14,7 @@ The add-on has been entirely redesigned:
 
 - added a configuration page with binding address for the matterbridge frontend and the possibility to install the latest dev instead of the latest stable
 
-![Configuration](https://github.com/Luligu/matterbridge-home-assistant-addon-test/blob/main/screenshots/configuration.png)
+![Configuration](https://github.com/user-attachments/assets/5038dba2-438d-4984-bfb7-f76329fe3324)
 
 - added a welcome message with information on the image (you can see it in the Hass logs page of the add-on)
 
