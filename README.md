@@ -32,6 +32,10 @@ When you build/rebuild the add-on, Matterbridge will reload all plugins that wer
 
 The Add-on can run on arm64, amd64 archs (armv7 is [deprecated](https://www.home-assistant.io/blog/2025/05/22/deprecating-core-and-supervised-installation-methods-and-32-bit-systems) by Home Assistant). The image is built on Debian 12 (bookworm-slim) with Node.js 22.
 
+# Changelog
+
+[Changelog](https://github.com/Luligu/matterbridge-home-assistant-addon-test/CHANGELOG.md)
+
 # YouTube
 
 There is this nice video on https://www.youtube.com/watch?v=06zzl7o_IqQ.
@@ -74,7 +78,9 @@ To open the Matterbridge frontend click on **Open web UI**.
 
 You may be asked to install the Home Assistant Matter Server: confirm the default installation.
 
-This add-on has a ![configuration page](https://github.com/user-attachments/assets/5038dba2-438d-4984-bfb7-f76329fe3324) with the binding address for the matterbridge frontend and the possibility to install the latest dev instead of the latest stable.
+This add-on has a configuration page with the binding address for the matterbridge frontend and the possibility to install the latest dev instead of the latest stable.
+
+![configuration page](https://github.com/user-attachments/assets/5038dba2-438d-4984-bfb7-f76329fe3324)
 
 ## Supervisor behavior
 
