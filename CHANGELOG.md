@@ -2,7 +2,9 @@
 
 All notable changes to this project will be documented in this file.
 
-If you like this project and find it useful, please consider giving it a star on GitHub at https://github.com/Luligu/matterbridge-home-assistant-addon and sponsoring it at https://buymeacoffee.com/luligugithub.
+If you like this project and find it useful, please consider giving it a star on GitHub at https://github.com/Luligu/matterbridge-home-assistant-addon and sponsoring it.
+
+<a href="https://www.buymeacoffee.com/luligugithub"><img src="https://matterbridge.io/assets/bmc-button.svg" alt="Buy me a coffee" width="120"></a>
 
 # Changelog
 
@@ -14,7 +16,7 @@ The add-on has been entirely redesigned:
 
 ![Configuration](https://github.com/Luligu/matterbridge-home-assistant-addon-test/blob/main/screenshots/configuration.png)
 
-- added a welcom message with information on the image (you can see it in the Hass logs page of the add-on)
+- added a welcome message with information on the image (you can see it in the Hass logs page of the add-on)
 
 ![Welcome message](https://github.com/Luligu/matterbridge-home-assistant-addon-test/blob/main/screenshots/welcome.png)
 
