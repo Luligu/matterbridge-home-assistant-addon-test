@@ -1,6 +1,6 @@
 {
     "name": "Matterbridge Home Assistant Add-on",
-    "version": "2026.1.0",
+    "version": "2026.1.2",
     "slug": "matterbridgetest",
     "description": "Official Matterbridge Home Assistant Add-on",
     "url": "https://github.com/Luligu/matterbridge-home-assistant-addon-test",
