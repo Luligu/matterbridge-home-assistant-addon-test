@@ -18,7 +18,7 @@ The add-on has been entirely redesigned:
 
 - added a welcome message with information on the image (you can see it in the Hass logs page of the add-on)
 
-![Welcome message](https://github.com/Luligu/matterbridge-home-assistant-addon-test/blob/main/screenshots/welcome.png)
+![Welcome message](https://github.com/user-attachments/assets/e4e6c245-125c-4c52-a14d-e720e677f787)
 
 - the add-on always update matterbridge with the latest stable or the latest dev on restart or rebuild
 
