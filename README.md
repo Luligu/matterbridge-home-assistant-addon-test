@@ -78,9 +78,7 @@ This add-on has a ![configuration page](https://github.com/user-attachments/asse
 
 ## Supervisor behavior
 
-When the supervisor gets updated, or the host machine (like a Home Assistant Green) makes a full reboot, the supervisor recreates the matterbridge container with the last built image. This can lead to having a very old version of matterbridge and plugins.
-
-To avoid this, update the add-on and rebuild the container when you are prompted to.
+To avoid having any old version of matterbridge and plugins, always update the add-on and rebuild the container when you are prompted to.
 
 After updating the add-on or rebuilding it, in the log you will see messages like this:
 
@@ -91,7 +89,7 @@ After updating the add-on or rebuilding it, in the log you will see messages lik
 [18:16:18.973] [Matterbridge] Plugin matterbridge-example-dynamic-platform reinstalled.
 ```
 
-This is normal in this context and means that Matterbridge detected that in the new image the plugins are not present and will install them from npm using the latest version.
+This is normal in this context and means that Matterbridge detected that in the new image the plugins are not present and will install them from npm using the latest stable version or the latest dev version.
 
 If you were using a plugin installed from a tarball, you need to reinstall it manually.
 
