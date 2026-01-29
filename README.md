@@ -78,9 +78,9 @@ To open the Matterbridge frontend click on **Open web UI**.
 
 You may be asked to install the Home Assistant Matter Server: confirm the default installation.
 
-This add-on has a configuration page with the binding address for the matterbridge frontend and the possibility to install the latest dev instead of the latest stable.
+This add-on has a configuration page with the binding address for the matterbridge frontend and the possibility to install the latest dev instead or the latest stable.
 
-![configuration page](https://github.com/user-attachments/assets/5038dba2-438d-4984-bfb7-f76329fe3324)
+![Configuration page](https://github.com/user-attachments/assets/5038dba2-438d-4984-bfb7-f76329fe3324)
 
 ## Supervisor behavior
 
@@ -109,10 +109,12 @@ A restart or rebuild of the add-on will update the Matterbridge version.
 
 Since Home Assistant exposes a lot of interfaces to the containers, is mandatory to set the matter mdns interface in the Matterbridge Settings page.
 
-![image](https://github.com/user-attachments/assets/bdaa91ea-4c87-4aeb-9cec-dd99be0ec8dc)
+![Matterbridge settings](https://github.com/user-attachments/assets/50f89b9c-f450-4702-95cf-ee5359e2af31)
+
+<img width="705" height="649" alt="image" src="https://github.com/user-attachments/assets/50f89b9c-f450-4702-95cf-ee5359e2af31" />
 
 You can get the correct interface name from the Network page in the settings of Home Assistant.
 
 In this case the correct name is end0.
 
-![image](https://github.com/user-attachments/assets/1c09c1a4-41b5-41ed-924e-1f1086140b50)
+![Network configuration](https://github.com/user-attachments/assets/3217ed7c-f5ae-49d9-8155-10966fd05609)
