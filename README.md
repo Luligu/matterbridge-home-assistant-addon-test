@@ -30,7 +30,9 @@ The Matterbridge storage and the Matterbridge plugins storage persist when you u
 
 When you build/rebuild the add-on, Matterbridge will reload all plugins that were registered (it takes time so be patient).
 
-The Add-on can run on arm64, amd64 archs (armv7 is [deprecated](https://www.home-assistant.io/blog/2025/05/22/deprecating-core-and-supervised-installation-methods-and-32-bit-systems) by Home Assistant). The image is built on Debian 12 (bookworm-slim) with Node.js 22.
+The Add-on can run on arm64, amd64 archs (armv7 arch is [deprecated](https://www.home-assistant.io/blog/2025/05/22/deprecating-core-and-supervised-installation-methods-and-32-bit-systems) by Home Assistant). 
+
+The image is built on Debian 12 (bookworm-slim) with Node.js 22.
 
 # Changelog
 
