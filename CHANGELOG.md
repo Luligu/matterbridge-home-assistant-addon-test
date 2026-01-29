@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-If you like this project and find it useful, please consider giving it a star on GitHub at https://github.com/Luligu/matterbridge-home-assistant-addon and sponsoring it.
+If you like this project and find it useful, please consider giving it a star on [GitHub](https://github.com/Luligu/matterbridge-home-assistant-addon) and sponsoring it.
 
 <a href="https://www.buymeacoffee.com/luligugithub"><img src="https://matterbridge.io/assets/bmc-button.svg" alt="Buy me a coffee" width="120"></a>
 
@@ -22,7 +22,7 @@ The add-on has been entirely redesigned:
 
 - the add-on always update matterbridge with the latest stable or the latest dev on restart or rebuild
 
-- the plugins are reinstalled with the latest dev or the latest stable depending on what was running before the rebuild
+- the plugins are reinstalled with the latest dev or the latest stable depending on what was running before the restart or rebuild
 
 ## 2.0.19 - 2026-01-25
 
