@@ -40,12 +40,12 @@ mkdir -p $MATTERBRIDGE_CERT
 # Install Matterbridge based on selected branch
 case "$BRANCH" in
   dev)
-    echo "Branch = dev → installing matterbridge@dev..."
+    echo "Branch = dev → installing matterbridge@dev from npm..."
     echo "This can take up to 3 minute on a Home Assistant Green..."
     npm install matterbridge@dev --no-fund --no-audit --global --omit=dev
     ;;
   main|*)
-    echo "Branch = main → installing matterbridge"
+    echo "Branch = main → installing matterbridge@latest from npm..."
     echo "This can take up to 3 minute on a Home Assistant Green..."
     npm install matterbridge --no-fund --no-audit --global --omit=dev
     ;;

@@ -16,13 +16,13 @@
 
 If you like this project and find it useful, please consider giving it a star on [GitHub](https://github.com/Luligu/matterbridge-home-assistant-addon) and sponsoring it.
 
-<a href="https://www.buymeacoffee.com/luligugithub"><img src="https://matterbridge.io/bmc-button.svg" alt="Buy me a coffee" width="120"></a>
+<a href="https://www.buymeacoffee.com/luligugithub"><img src="https://matterbridge.io/assets/bmc-button.svg" alt="Buy me a coffee" width="120"></a>
 
 # Matterbridge Home Assistant Add-on
 
 This repository contains the Matterbridge Official Home Assistant Add-on.
 
-It allows you to run Matterbridge as a Home Assistant Add-on.
+It allows you to run [Matterbridge](https://matterbridge.io) as a Home Assistant Add-on.
 
 All Matterbridge features are correctly working in the official add-on (e.g. you can update Matterbridge itself or the plugins without issues).
 
@@ -30,7 +30,7 @@ The Matterbridge storage and the Matterbridge plugins storage persist when you u
 
 When you build/rebuild the add-on, Matterbridge will reload all plugins that were registered (it takes time so be patient).
 
-The Add-on can run on arm64, amd64 archs (armv7 arch is [deprecated](https://www.home-assistant.io/blog/2025/05/22/deprecating-core-and-supervised-installation-methods-and-32-bit-systems) by Home Assistant). 
+The Add-on can run on arm64, amd64 archs (armv7 arch is [deprecated](https://www.home-assistant.io/blog/2025/05/22/deprecating-core-and-supervised-installation-methods-and-32-bit-systems) by Home Assistant).
 
 The image is built on Debian 12 (bookworm-slim) with Node.js 22.
 
@@ -80,13 +80,19 @@ To open the Matterbridge frontend click on **Open web UI**.
 
 You may be asked to install the Home Assistant Matter Server: confirm the default installation.
 
-This add-on has a configuration page with the binding address for the matterbridge frontend and the possibility to install the latest dev instead or the latest stable.
+The add-on works perfectly with the beta of Matter Server (we use the same matter library).
+
+This add-on has a configuration page where you can set the binding address for the matterbridge frontend and select to install the latest dev or the latest stable.
 
 ![Configuration page](https://github.com/user-attachments/assets/5038dba2-438d-4984-bfb7-f76329fe3324)
 
 ## Supervisor behavior
 
 To avoid having any old version of matterbridge and plugins, always update the add-on and rebuild the container when you are prompted to.
+
+A restart or reboot of Home Assistant will update the Matterbridge version.
+
+A restart or rebuild of the add-on will update the Matterbridge version.
 
 After updating the add-on or rebuilding it, in the log you will see messages like this:
 
@@ -97,24 +103,20 @@ After updating the add-on or rebuilding it, in the log you will see messages lik
 [18:16:18.973] [Matterbridge] Plugin matterbridge-example-dynamic-platform reinstalled.
 ```
 
-This is normal in this context and means that Matterbridge detected that in the new image the plugins are not present and will install them from npm using the latest stable version or the latest dev version.
+This is normal in this context and means that Matterbridge detected that in the newly created container the plugins are not present and will install them from npm using the latest stable version or the latest dev version.
 
 If you were using a plugin installed from a tarball, you need to reinstall it manually.
 
 If you were using a dev version of plugin, it will be reinstalled with the latest dev version.
 
-## Home Assistant restart and reboot
-
-A restart or rebuild of the add-on will update the Matterbridge version.
-
 ## How to configure the mdns
 
-Since Home Assistant exposes a lot of interfaces to the containers, is mandatory to set the matter mdns interface in the Matterbridge Settings page.
+Since Home Assistant exposes a lot of interfaces to the containers, is mandatory to set the **matter mdns interface** in the Matterbridge Settings page.
 
 ![Matterbridge settings](https://github.com/user-attachments/assets/50f89b9c-f450-4702-95cf-ee5359e2af31)
 
-You can get the correct interface name from the Network page in the settings of Home Assistant.
+You can get the correct interface name from the **Network Adapter** panel. From the Home Assistant frontend navigate to Settings -> System -> Network.
 
-In this case the correct name is end0.
+In this case the correct name is end0 but your system can have a different interface.
 
 ![Network configuration](https://github.com/user-attachments/assets/3217ed7c-f5ae-49d9-8155-10966fd05609)

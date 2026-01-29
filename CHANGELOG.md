@@ -12,11 +12,11 @@ If you like this project and find it useful, please consider giving it a star on
 
 The add-on has been entirely redesigned:
 
-- added a configuration page with binding address for the matterbridge frontend and the possibility to install the latest dev instead of the latest stable
+- added a configuration page where you can set the binding address for the matterbridge frontend and select to install the latest dev or the latest stable
 
 ![Configuration](https://github.com/user-attachments/assets/5038dba2-438d-4984-bfb7-f76329fe3324)
 
-- added a welcome message with information on the image (you can see it in the Hass logs page of the add-on)
+- added a welcome message with information on the image (from the Home Assistant frontend navigate to Settings -> System -> Logs and select Matterbridge Home Assistant Add-on)
 
 ![Welcome message](https://github.com/user-attachments/assets/e4e6c245-125c-4c52-a14d-e720e677f787)
 
