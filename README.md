@@ -34,9 +34,11 @@ The Add-on can run on arm64, amd64 archs (armv7 arch is [deprecated](https://www
 
 The image is built on Debian 12 (bookworm-slim) with Node.js 22.
 
-# Changelog
+# Changelogs
 
-[Changelog](https://github.com/Luligu/matterbridge-home-assistant-addon-test/blob/main/CHANGELOG.md)
+[Add-on Changelog](https://github.com/Luligu/matterbridge-home-assistant-addon-test/blob/main/CHANGELOG.md)
+
+[Matterbridge Changelog](https://matterbridge.io/CHANGELOG.html)
 
 # YouTube
 
