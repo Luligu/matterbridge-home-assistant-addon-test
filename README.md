@@ -111,8 +111,6 @@ Since Home Assistant exposes a lot of interfaces to the containers, is mandatory
 
 ![Matterbridge settings](https://github.com/user-attachments/assets/50f89b9c-f450-4702-95cf-ee5359e2af31)
 
-<img width="705" height="649" alt="image" src="https://github.com/user-attachments/assets/50f89b9c-f450-4702-95cf-ee5359e2af31" />
-
 You can get the correct interface name from the Network page in the settings of Home Assistant.
 
 In this case the correct name is end0.
