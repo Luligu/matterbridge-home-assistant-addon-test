@@ -1,4 +1,4 @@
-# <img src="https://matterbridge.io/assets/matterbridge.svg" alt="Matterbridge Logo" width="64px" height="64px"> &nbsp;&nbsp;&nbsp;Matterbridge Home Assistant Add-on
+# <img src="https://matterbridge.io/assets/matterbridge.svg" alt="Matterbridge Logo" width="32px" height="32px"> &nbsp;&nbsp;&nbsp;Matterbridge Home Assistant Application
 
 [![npm version](https://img.shields.io/npm/v/matterbridge.svg)](https://www.npmjs.com/package/matterbridge)
 [![npm downloads](https://img.shields.io/npm/dt/matterbridge.svg)](https://www.npmjs.com/package/matterbridge)
@@ -16,37 +16,35 @@
 
 If you like this project and find it useful, please consider giving it a star on [GitHub](https://github.com/Luligu/matterbridge-home-assistant-addon) and sponsoring it.
 
-<a href="https://www.buymeacoffee.com/luligugithub"><img src="https://matterbridge.io/assets/bmc-button.svg" alt="Buy me a coffee" width="120"></a>
+<a href="https://www.buymeacoffee.com/luligugithub"><img src="https://matterbridge.io/assets/bmc-button.svg" alt="Buy me a coffee" width="80"></a>
 
-# Matterbridge Home Assistant Add-on
+# Matterbridge Home Assistant Application
 
-This repository contains the Matterbridge Official Home Assistant Add-on.
+The official Matterbridge Home Assistant Application (formerly known as add-on) allows you to run [Matterbridge](https://matterbridge.io) with the Home Assistant Supervisor.
 
-It allows you to run [Matterbridge](https://matterbridge.io) as a Home Assistant Add-on.
+All Matterbridge features work correctly in the official application (e.g. you can update Matterbridge itself or the plugins without issues).
 
-All Matterbridge features are correctly working in the official add-on (e.g. you can update Matterbridge itself or the plugins without issues).
+The Matterbridge storage and the Matterbridge plugins storage persist when you update, rebuild or restart the application.
 
-The Matterbridge storage and the Matterbridge plugins storage persist when you update the Add-on, rebuild or restart it.
+When you build/rebuild the application, Matterbridge will reload all plugins that were previously registered (it takes time so be patient).
 
-When you build/rebuild the add-on, Matterbridge will reload all plugins that were registered (it takes time so be patient).
+The Application can run on arm64, amd64 archs (armv7 arch is [deprecated](https://www.home-assistant.io/blog/2025/05/22/deprecating-core-and-supervised-installation-methods-and-32-bit-systems) by Home Assistant).
 
-The Add-on can run on arm64, amd64 archs (armv7 arch is [deprecated](https://www.home-assistant.io/blog/2025/05/22/deprecating-core-and-supervised-installation-methods-and-32-bit-systems) by Home Assistant).
-
-The image is built on Debian 12 (bookworm-slim) with Node.js 22.
+The image is built on Debian 13 (trixie-slim) with Node.js 24 and integrates the s6-rc overlay system.
 
 # Changelogs
 
-[Add-on Changelog](https://github.com/Luligu/matterbridge-home-assistant-addon-test/blob/main/CHANGELOG.md)
+[Add-on Changelog](https://github.com/Luligu/matterbridge-home-assistant-addon/blob/main/CHANGELOG.md)
 
 [Matterbridge Changelog](https://matterbridge.io/CHANGELOG.html)
 
 # YouTube
 
-There is this nice video on https://www.youtube.com/watch?v=06zzl7o_IqQ.
+Here’s a nice video: https://www.youtube.com/watch?v=06zzl7o_IqQ.
 
 # Matterbridge Home Assistant plugin
 
-The ideal companion of the add-on is the [Official Matterbridge Home Assistant plugin](https://github.com/Luligu/matterbridge-hass/blob/main/README.md)
+The ideal companion to the add-on is the [Matterbridge Home Assistant plugin](https://github.com/Luligu/matterbridge-hass/blob/main/README.md)
 
 ## How to install the add-on
 
@@ -56,7 +54,7 @@ Click here
 
 or from your **Home Assistant** web page, go to **Settings**, select **Add-ons** and click on the **ADD-ON STORE** button.
 
-In the upper right corner click on the **three dots menu**, select **Repositories** and paste this link
+In the upper-right corner, click on the **three dots menu**, select **Repositories** and paste this link
 
 ```
 https://github.com/Luligu/matterbridge-home-assistant-addon
@@ -74,7 +72,7 @@ The Watchdog is not used because Matterbridge always restarts with docker.
 
 Click on **Build** or **Rebuild**.
 
-The building process on a Home Assistant Green takes around 2-3 minute.
+The building process on a Home Assistant Green takes around 2-3 minutes.
 
 Starting Matterbridge the first time after a rebuild takes time too because it will reload all plugins that were already registered.
 
@@ -84,7 +82,7 @@ You may be asked to install the Home Assistant Matter Server: confirm the defaul
 
 The add-on works perfectly with the beta of Matter Server (we use the same matter library).
 
-This add-on has a configuration page where you can set the binding address for the matterbridge frontend and select to install the latest dev or the latest stable.
+This add-on has a configuration page where you can set the binding address for the matterbridge frontend and select to install the latest dev or the latest stable release of matterbridge.
 
 ![Configuration page](https://github.com/user-attachments/assets/5038dba2-438d-4984-bfb7-f76329fe3324)
 
@@ -105,15 +103,15 @@ After updating the add-on or rebuilding it, in the log you will see messages lik
 [18:16:18.973] [Matterbridge] Plugin matterbridge-example-dynamic-platform reinstalled.
 ```
 
-This is normal in this context and means that Matterbridge detected that in the newly created container the plugins are not present and will install them from npm using the latest stable version or the latest dev version.
+This is normal in this context and means that Matterbridge detected that the plugins are not present in the newly created container and will install them from npm using the latest stable version or the latest dev version.
 
 If you were using a plugin installed from a tarball, you need to reinstall it manually.
 
-If you were using a dev version of plugin, it will be reinstalled with the latest dev version.
+If you were using a dev version of a plugin, it will be reinstalled with the latest dev version.
 
-## How to configure the mdns
+## How to configure the Matter mDNS
 
-Since Home Assistant exposes a lot of interfaces to the containers, is mandatory to set the **matter mdns interface** in the Matterbridge Settings page.
+Since Home Assistant exposes a lot of interfaces to the containers, it is mandatory to set the **matter mdns interface** in the Matterbridge Settings page.
 
 ![Matterbridge settings](https://github.com/user-attachments/assets/50f89b9c-f450-4702-95cf-ee5359e2af31)
 
