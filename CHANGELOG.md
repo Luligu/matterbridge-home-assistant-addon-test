@@ -1,4 +1,4 @@
-# Matterbridge Home Assistant Application
+# <img src="https://matterbridge.io/assets/matterbridge.svg" alt="Matterbridge Logo" width="32px" height="32px"> &nbsp;&nbsp;&nbsp; Changelog
 
 All notable changes to this project will be documented in this file.
 
@@ -7,6 +7,12 @@ If you like this project and find it useful, please consider giving it a star on
 <a href="https://www.buymeacoffee.com/luligugithub"><img src="https://matterbridge.io/assets/bmc-button.svg" alt="Buy me a coffee" width="120"></a>
 
 # Changelog
+
+## 2026.1.2 - 2026-01-31
+
+- added luligu/matterbridge:s6-rc-base as base image: the image is built on Debian 13 (trixie-slim) with Node.js 24 and integrates the s6-rc overlay system
+
+- added the s6-rc overlay system used by the Home Assistant Supervisor
 
 ## 2026.1.1 - 2026-01-29
 
