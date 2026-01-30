@@ -22,7 +22,7 @@ The application (formerly known as add-on) has been entirely redesigned:
 
 ![Configuration](https://github.com/user-attachments/assets/5038dba2-438d-4984-bfb7-f76329fe3324)
 
-- added a welcome message with information about the image (from the Home Assistant frontend navigate to Settings -> System -> Logs and select Matterbridge Home Assistant Add-on)
+- added a welcome message with information about the image (from the Home Assistant frontend navigate to Settings -> System -> Logs and select Matterbridge Home Assistant Application)
 
 ![Welcome message](https://github.com/user-attachments/assets/8c5f26ed-9d07-4a57-9649-c301986e02dd)
 
