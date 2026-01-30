@@ -1,4 +1,4 @@
-# Matterbridge Official Home Assistant Add-on
+# Matterbridge Home Assistant Application
 
 All notable changes to this project will be documented in this file.
 
@@ -10,7 +10,7 @@ If you like this project and find it useful, please consider giving it a star on
 
 ## 2026.1.1 - 2026-01-29
 
-The add-on has been entirely redesigned:
+The application (formerly known as add-on) has been entirely redesigned:
 
 - added a configuration page where you can set the binding address for the matterbridge frontend and choose whether to install the latest dev or the latest stable release of matterbridge
 
