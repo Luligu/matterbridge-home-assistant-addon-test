@@ -20,7 +20,7 @@ The application (formerly known as add-on) has been entirely redesigned:
 
 ![Welcome message](https://github.com/user-attachments/assets/8c5f26ed-9d07-4a57-9649-c301986e02dd)
 
-- the add-on always updates matterbridge with the latest stable or the latest dev on restart or rebuild
+- the application always updates matterbridge with the latest stable or the latest dev on restart or rebuild
 
 - the plugins are reinstalled with the latest dev or the latest stable, depending on what was running before the restart or rebuild
 
