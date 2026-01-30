@@ -48,7 +48,7 @@ if [ ! -f "${INSTALL_MARKER}" ]; then
       ;;
     main|*)
       echo "⚙️ Branch = main → installing matterbridge@latest from npm..."
-      echo "📦 Matterbridge already installed in base image, skipping installation."
+      echo "📦 Matterbridge already installed in the base image, skipping installation."
       # echo "This can take up to 3 minute on a Home Assistant Green..."
       # npm install matterbridge --no-fund --no-audit --global --omit=dev
       ;;
