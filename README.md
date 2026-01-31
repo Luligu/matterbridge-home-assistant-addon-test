@@ -26,8 +26,8 @@ All Matterbridge features work correctly in the official application (e.g. you c
 
 The Matterbridge storage and the Matterbridge plugins storage persist when you update, rebuild or restart the application.
 
-When you build/rebuild the application, Matterbridge will reload all plugins that were previously registered (it takes time so be patient).
+When you restart, build or rebuild the application, Matterbridge will reload all plugins that were previously registered (it takes time so be patient).
 
-The Application can run on arm64 and amd64 archs (armv7 arch is [deprecated](https://www.home-assistant.io/blog/2025/05/22/deprecating-core-and-supervised-installation-methods-and-32-bit-systems) by Home Assistant).
+The Application can run on arm64 and amd64 archs (armv7 arch has been [deprecated](https://www.home-assistant.io/blog/2025/05/22/deprecating-core-and-supervised-installation-methods-and-32-bit-systems) by Home Assistant).
 
-The image is built on **Debian 13** (trixie-slim) with **Node.js 24** and integrates the **s6-rc overlay** system.
+The image (luligu/matterbridge:s6-rc-base) is built on **Debian 13** (trixie-slim) with **Node.js 24** and integrates the **s6-rc overlay** system.
