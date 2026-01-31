@@ -1,5 +1,5 @@
 name: Matterbridge Home Assistant Application (Test)
-version: 2026.1.6
+version: 2026.1.7
 slug: matterbridge-test
 description: Matterbridge Home Assistant Application (Test)
 url: "https://github.com/Luligu/matterbridge-home-assistant-addon"
