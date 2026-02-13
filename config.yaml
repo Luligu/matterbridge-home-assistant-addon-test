@@ -2,8 +2,8 @@ name: Matterbridge Home Assistant Application (Test)
 version: 2026.2.4
 slug: matterbridge-test
 description: Matterbridge Home Assistant Application (Test)
-url: "https://github.com/Luligu/matterbridge-home-assistant-addon"
-changelog: "https://github.com/Luligu/matterbridge-home-assistant-addon/blob/main/CHANGELOG.md"
+url: "https://github.com/Luligu/matterbridge-home-assistant-addon-test"
+changelog: "https://github.com/Luligu/matterbridge-home-assistant-addon-test/blob/main/CHANGELOG.md"
 
 arch:
   - amd64
