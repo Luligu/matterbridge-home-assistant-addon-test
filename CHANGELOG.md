@@ -8,13 +8,33 @@ If you like this project and find it useful, please consider giving it a star on
 
 # Changelog
 
+## 2026.2.3 - 2026-02-11
+
+- Updated matterbridge-hass to [1.0.6](https://github.com/Luligu/matterbridge-hass/blob/main/CHANGELOG.md#106---2026-02-10).
+- Updated matterbridge-hass to [1.0.5](https://github.com/Luligu/matterbridge-hass/blob/main/CHANGELOG.md#105---2026-02-07).
+
+## 2026.2.2 - 2026-02-09
+
+- Updated matterbridge to [3.5.3](https://matterbridge.io/CHANGELOG.html#353-2026-02-06).
+- Updated matterbridge-hass to [1.0.4](https://github.com/Luligu/matterbridge-hass/blob/main/CHANGELOG.md#104---2026-02-04).
+
+## 2026.2.1 - 2026-02-03
+
+- added **free memory** and **total memory** info in the Welcome message on start.
+- added **Force update** configuration. Leave it active unless you have [issue](https://github.com/Luligu/matterbridge-home-assistant-addon/issues/37) installing the new version from npm.
+- reduced the **restart time** adding persistent npm cache.
+
+## 2026.1.3 - 2026-01-31
+
+- fixed frontend port.
+
 ## 2026.1.2 - 2026-01-31
 
 - updated matterbridge to [3.5.2](https://matterbridge.io/CHANGELOG.html#352-2026-01-31).
 
-- added **luligu/matterbridge:s6-rc-base** as base image: the image is built on **Debian 13** (trixie-slim) with **Node.js 24** and integrates the **s6-rc overlay** system
+- added **luligu/matterbridge:s6-rc-base** as base image: the image is built on **Debian 13** (trixie-slim) with **Node.js 24** and integrates the **s6-rc overlay** system.
 
-- added the **s6-rc overlay** system used by the Home Assistant Supervisor
+- added the **s6-rc overlay** system used by the Home Assistant Supervisor.
 
 ## 2026.1.1 - 2026-01-29
 
@@ -22,11 +42,11 @@ The application (formerly known as add-on) has been entirely redesigned:
 
 - added a configuration page where you can set the binding address for the matterbridge frontend and choose whether to install the latest dev or the latest stable release of matterbridge
 
-![Configuration](https://github.com/user-attachments/assets/5038dba2-438d-4984-bfb7-f76329fe3324)
+![Configuration](https://github.com/user-attachments/assets/b94aac2a-1dfc-4334-a4ec-c1165d8c7c83)
 
 - added a welcome message with information about the image (from the Home Assistant frontend navigate to Settings -> System -> Logs and select Matterbridge Home Assistant Application)
 
-![Welcome message](https://github.com/user-attachments/assets/8c5f26ed-9d07-4a57-9649-c301986e02dd)
+![Welcome message](https://github.com/user-attachments/assets/cf1a092a-6d2b-49cf-a342-c5c62509d83d)
 
 - the application always updates matterbridge with the latest stable or the latest dev on restart or rebuild
 

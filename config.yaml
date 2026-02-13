@@ -1,5 +1,5 @@
 name: Matterbridge Home Assistant Application (Test)
-version: 2026.1.7
+version: 2026.2.4
 slug: matterbridge-test
 description: Matterbridge Home Assistant Application (Test)
 url: "https://github.com/Luligu/matterbridge-home-assistant-addon"
@@ -9,11 +9,13 @@ arch:
   - amd64
   - aarch64
 
+image: luligu/matterbridge
+
 panel_title: Matterbridge (Test)
 panel_icon: mdi:bridge
 
 ingress: true
-ingress_port: 8080
+ingress_port: 8283
 
 map:
   - addons:rw
@@ -25,7 +27,9 @@ init: false
 schema:
   frontend_bind: str
   branch: list(main|dev)
+  force_update: bool
 
 options:
   frontend_bind: 0.0.0.0
   branch: main
+  force_update: true
